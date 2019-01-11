@@ -116,6 +116,7 @@ function calculate(){
 function populatdroodown(){
   var path = "static/data.csv";
   var path2="static/data2.csv";
+  console.log("in pop drop");
   console.log(path2);
   d3.csv(path2).then(sucseefulhandel, errorhandel);
   function sucseefulhandel(data){
@@ -139,7 +140,8 @@ function populatdroodown(){
 
 function getData(name){
   // var path = "static/Data.csv";
-  var path2="static/Data2.csv"
+  console.log("in get data");
+  var path2="static/data2.csv"
   d3.csv(path2).then(sucseefulhandel, errorhandel);
   function sucseefulhandel(data){
     var filterdata=data.filter(item=> item.cityName===name)
