@@ -114,8 +114,9 @@ function calculate(){
 }
 
 function populatdroodown(){
-  var path = "static/Data.csv";
-  var path2="static/Data2.csv"
+  var path = "static/data.csv";
+  var path2="static/data2.csv";
+  console.log(path2);
   d3.csv(path2).then(sucseefulhandel, errorhandel);
   function sucseefulhandel(data){
   var selector= d3.select("#searchby")
